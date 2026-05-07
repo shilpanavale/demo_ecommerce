@@ -2,14 +2,14 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Luma Commerce | Premium ecommerce growth platform",
+  title: "Moolchand Mill Pvt Ltd | Paithani Mahotsav",
   description:
-    "A modern ecommerce landing page with responsive sections, pricing, testimonials, and a conversion-focused CTA.",
+    "Responsive ecommerce homepage for festive sarees, new arrivals, and traditional Paithani collections.",
   metadataBase: new URL("https://demo-ecommerce.example"),
   openGraph: {
-    title: "Luma Commerce",
+    title: "Moolchand Mill Pvt Ltd",
     description:
-      "Launch premium storefronts with fast checkout, insights, and retention automations.",
+      "Shop festive sarees, Paithani collections, and new arrival drapes.",
     type: "website",
   },
 };
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#fffaf0",
+  themeColor: "#050505",
 };
 
 export default function RootLayout({

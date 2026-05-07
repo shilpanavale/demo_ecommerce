@@ -1,23 +1,19 @@
-import { CtaContact } from "@/components/site/cta-contact";
-import { Features } from "@/components/site/features";
-import { Footer } from "@/components/site/footer";
-import { Hero } from "@/components/site/hero";
-import { Navbar } from "@/components/site/navbar";
-import { Pricing } from "@/components/site/pricing";
-import { Testimonials } from "@/components/site/testimonials";
+import { CategoryStrip } from "@/components/store/category-strip";
+import { ProductSection } from "@/components/store/product-section";
+import { StoreFooter } from "@/components/store/store-footer";
+import { StoreHero } from "@/components/store/store-hero";
+import { StoreNavbar } from "@/components/store/store-navbar";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <StoreNavbar />
       <main>
-        <Hero />
-        <Features />
-        <Testimonials />
-        <Pricing />
-        <CtaContact />
+        <StoreHero />
+        <ProductSection />
+        <CategoryStrip />
       </main>
-      <Footer />
+      <StoreFooter />
     </>
   );
 }

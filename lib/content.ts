@@ -100,3 +100,69 @@ export const faqItems = [
       "Every section uses responsive grids, flexible spacing, and accessible navigation patterns for desktop, tablet, and mobile screens.",
   },
 ] as const;
+
+export const storeNavItems = [
+  { label: "Home", href: "#home" },
+  { label: "About Us", href: "#about" },
+  { label: "Login", href: "#account" },
+  { label: "News Letter", href: "#newsletter" },
+] as const;
+
+export const products = [
+  {
+    title: "Zari Tissue Silk Saree",
+    price: "Rs. 1,499.00",
+    oldPrice: "Rs. 2,999.00",
+    tag: "BESTSELLER",
+    palette: "red",
+  },
+  {
+    title: "Tissue Silk Lotus Pallu",
+    price: "Rs. 1,999.00",
+    oldPrice: "Rs. 3,999.00",
+    palette: "pink",
+  },
+  {
+    title: "Timeless Embroidery Drape",
+    price: "Rs. 1,699.00",
+    oldPrice: "Rs. 2,899.00",
+    palette: "yellow",
+  },
+  {
+    title: "Timeless Beauty in Black",
+    price: "Rs. 1,650.00",
+    oldPrice: "Rs. 4,150.00",
+    palette: "black",
+  },
+  {
+    title: "Blue Floral Banarasi Saree",
+    price: "Rs. 1,799.00",
+    oldPrice: "Rs. 3,199.00",
+    palette: "blue",
+  },
+  {
+    title: "Mustard Wedding Silk Saree",
+    price: "Rs. 1,899.00",
+    oldPrice: "Rs. 3,499.00",
+    palette: "gold",
+  },
+  {
+    title: "Orange Kanjivaram Drape",
+    price: "Rs. 1,599.00",
+    oldPrice: "Rs. 3,399.00",
+    palette: "orange",
+  },
+  {
+    title: "Festive Pink Paithani Saree",
+    price: "Rs. 1,799.00",
+    oldPrice: "Rs. 3,299.00",
+    tag: "NEW",
+    palette: "green",
+  },
+] as const;
+
+export const categoryTiles = [
+  { title: "Paithani Mahotsav", subtitle: "Handpicked festive silks", palette: "green" },
+  { title: "Wedding Edit", subtitle: "Rich borders and zari finish", palette: "red" },
+  { title: "Daily Elegance", subtitle: "Soft drapes for every day", palette: "blue" },
+] as const;

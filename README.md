@@ -1,6 +1,6 @@
 # Demo Ecommerce
 
-A modern responsive ecommerce landing page built with:
+A modern responsive saree ecommerce homepage inspired by the supplied reference screenshot, built with:
 
 - React + Next.js App Router
 - TypeScript
@@ -9,13 +9,12 @@ A modern responsive ecommerce landing page built with:
 
 ## Sections
 
-- Sticky responsive navbar with mobile menu
-- Animated hero with ecommerce dashboard visual
-- Feature cards and conversion map
-- Testimonials
-- Pricing cards
-- CTA/contact form
-- Footer
+- Thin black storefront navbar with mobile menu
+- Botanical Paithani Mahotsav hero
+- Carousel-style slide dots
+- New Arrival product grid
+- Collection/category strip
+- Footer/newsletter area
 
 ## Setup
 
@@ -36,4 +35,4 @@ npm run build
 
 ## Notes
 
-The repository was empty at implementation time, so the full frontend scaffold is included. The Figma MCP server was unavailable from this cloud environment during implementation, which prevented direct extraction of node metadata, assets, and screenshots from the supplied Figma URL. The app therefore uses a polished ecommerce visual system with reusable components and design tokens that can be tuned further once Figma access is restored.
+The repository was empty at implementation time, so the full frontend scaffold is included. Product and hero visuals are built with lightweight CSS/React illustrations because no separate image assets were available in the repository.
