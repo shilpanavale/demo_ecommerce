@@ -1,0 +1,43 @@
+{
+  "name": "demo-ecommerce",
+  "version": "1.0.0",
+  "description": "Responsive ecommerce landing page built with Next.js, Tailwind CSS, TypeScript, and Framer Motion.",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "next typegen && tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shilpanavale/demo_ecommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shilpanavale/demo_ecommerce/issues"
+  },
+  "homepage": "https://github.com/shilpanavale/demo_ecommerce#readme",
+  "dependencies": {
+    "framer-motion": "^12.38.0",
+    "next": "^16.2.5",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.5",
+    "tailwindcss": "^4.2.4",
+    "typescript": "^6.0.3"
+  },
+  "overrides": {
+    "postcss": "8.5.14"
+  }
+}
