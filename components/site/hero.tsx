@@ -1,16 +1,20 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icons";
 import { metrics } from "@/lib/content";
 
-const heroCardVariants = {
+const heroCardVariants: Variants = {
   hidden: { opacity: 0, y: 22 },
   visible: (index: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: 0.18 + index * 0.1, duration: 0.65, ease: [0.22, 1, 0.36, 1] },
+    transition: {
+      delay: 0.18 + index * 0.1,
+      duration: 0.65,
+      ease: [0.22, 1, 0.36, 1],
+    },
   }),
 };
 

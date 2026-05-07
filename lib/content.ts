@@ -65,6 +65,7 @@ export const plans = [
     price: "$49",
     description: "For new teams building a polished commerce presence.",
     features: ["Visual storefront builder", "2 team seats", "Core analytics", "Email support"],
+    featured: false,
   },
   {
     name: "Scale",
@@ -83,6 +84,7 @@ export const plans = [
     price: "Custom",
     description: "For established retailers with complex operations.",
     features: ["Multi-market controls", "Dedicated success", "SLA support", "Custom integrations"],
+    featured: false,
   },
 ] as const;
 

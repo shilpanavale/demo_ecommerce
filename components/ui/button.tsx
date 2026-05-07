@@ -30,25 +30,23 @@ type ButtonAsButton = ButtonBaseProps &
     href?: undefined;
   };
 
-export function Button({
-  children,
-  className,
-  variant = "primary",
-  ...props
-}: ButtonAsAnchor | ButtonAsButton) {
+type ButtonProps = ButtonAsAnchor | ButtonAsButton;
+
+export function Button(props: ButtonProps) {
+  const { className, variant = "primary" } = props;
   const classes = cn(baseClass, variants[variant], className);
 
   if ("href" in props && props.href) {
-    return (
-      <a className={classes} {...props}>
-        {children}
-      </a>
-    );
+    const { className: _className, variant: _variant, ...anchorProps } = props;
+    return <a className={classes} {...anchorProps} />;
   }
 
-  return (
-    <button className={classes} {...props}>
-      {children}
-    </button>
-  );
+  const {
+    className: _className,
+    variant: _variant,
+    type = "button",
+    ...buttonProps
+  } = props as ButtonAsButton;
+
+  return <button className={classes} type={type} {...buttonProps} />;
 }
